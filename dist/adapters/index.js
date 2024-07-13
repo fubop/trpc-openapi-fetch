@@ -21,4 +21,5 @@ __exportStar(require("./next"), exports);
 __exportStar(require("./fastify"), exports);
 __exportStar(require("./fetch"), exports);
 __exportStar(require("./nuxt"), exports);
+__exportStar(require("./sveltekit"), exports);
 //# sourceMappingURL=index.js.map
