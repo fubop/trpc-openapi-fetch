@@ -5,3 +5,4 @@ export * from './next';
 export * from './fastify';
 export * from './fetch';
 export * from './nuxt';
+export * from './sveltekit';
