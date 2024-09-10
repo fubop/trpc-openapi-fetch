@@ -343,18 +343,6 @@ Please see [full typings here](src/types.ts).
 | `contentTypes` | `ContentType[]`     | A set of content types specified as accepted in the OpenAPI document.                                | `false`  | `['application/json']` |
 | `deprecated`   | `boolean`           | Whether or not to mark an endpoint as deprecated                                                     | `false`  | `false`                |
 
-#### CreateOpenApiNodeHttpHandlerOptions
-
-Please see [full typings here](src/adapters/node-http/core.ts).
-
-| Property        | Type       | Description                                            | Required |
-| --------------- | ---------- | ------------------------------------------------------ | -------- |
-| `router`        | `Router`   | Your application tRPC router.                          | `true`   |
-| `createContext` | `Function` | Passes contextual (`ctx`) data to procedure resolvers. | `false`  |
-| `responseMeta`  | `Function` | Returns any modifications to statusCode & headers.     | `false`  |
-| `onError`       | `Function` | Called if error occurs inside handler.                 | `false`  |
-| `maxBodySize`   | `number`   | Maximum request body size in bytes (default: 100kb).   | `false`  |
-
 ---
 
 _Still using tRPC v9? See our [`.interop()`](examples/with-interop) example._
