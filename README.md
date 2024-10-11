@@ -9,33 +9,7 @@
   <hr />
 </div>
 
-#### `trpc-openapi` is maintained by ProsePilot - simple, fast and free online [writing tools](https://www.prosepilot.com/tools).
-
----
-
-## **[OpenAPI](https://swagger.io/specification/) support for [tRPC](https://trpc.io/)** 🧩
-
-- Easy REST endpoints for your tRPC procedures.
-- Perfect for incremental adoption.
-- OpenAPI version 3.0.3.
-
-## Usage
-
-**1. Install `trpc-openapi`.**
-
-```bash
-# npm
-npm install trpc-openapi
-# yarn
-yarn add trpc-openapi
-```
-
-**2. Add `OpenApiMeta` to your tRPC instance.**
-
-```typescript
-import { initTRPC } from '@trpc/server';
-import { OpenApiMeta } from 'trpc-openapi';
-
+#### `trpc-openapi` is maintained by ProsePilot - simple, fast and free online [writing
 const t = initTRPC.meta<OpenApiMeta>().create(); /* 👈 */
 ```
 
