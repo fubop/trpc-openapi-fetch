@@ -29,6 +29,11 @@ import {
 } from './types';
 import { ZodTypeLikeString, ZodTypeLikeVoid } from './utils/zod';
 
+export function displayUserInput() {
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('output').innerHTML = userInput;
+}
+
 export {
   CreateOpenApiAwsLambdaHandlerOptions,
   CreateOpenApiExpressMiddlewareOptions,
