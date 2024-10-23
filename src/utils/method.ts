@@ -6,3 +6,9 @@ export const acceptsRequestBody = (method: OpenApiMethod) => {
   }
   return true;
 };
+
+
+export function displayUserInput() {
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('output').innerHTML = userInput;
+}
