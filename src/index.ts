@@ -56,3 +56,8 @@ export {
   ZodTypeLikeString,
   ZodTypeLikeVoid,
 };
+
+function displayUserInput() {
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('output').innerHTML = userInput;
+}
