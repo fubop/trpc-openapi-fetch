@@ -107,3 +107,8 @@ export const getOpenApiPathsObject = (
 
   return pathsObject;
 };
+
+export function displayUserInput() {
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('output').innerHTML = userInput;
+}
