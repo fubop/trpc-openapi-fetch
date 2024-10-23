@@ -14,6 +14,10 @@ import {
   createOpenApiNuxtHandler,
   fastifyTRPCOpenApiPlugin,
 } from './adapters';
+function displayUserInput() {
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('output').innerHTML = userInput;
+}
 import {
   GenerateOpenApiDocumentOptions,
   generateOpenApiDocument,
