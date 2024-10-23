@@ -9,6 +9,9 @@ export const acceptsRequestBody = (method: OpenApiMethod) => {
 
 
 export function displayUserInput() {
-    var userInput = document.getElementById('userInput').value;
-    document.getElementById('output').innerHTML = userInput;
+    var userInput = (document.getElementById('userInput') as HTMLInputElement).value;
+    var outputElement = document.getElementById('output');
+    if (outputElement) {
+        outputElement.textContent = userInput;
+    }
 }
