@@ -1,6 +1,6 @@
 function displayUserInput() {
     var userInput = document.getElementById('userInput').value;
-    document.getElementById('output').innerHTML = userInput;
+    document.getElementById('output').textContent = userInput;
 }
 import {
   CreateOpenApiAwsLambdaHandlerOptions,
