@@ -1,3 +1,7 @@
+function displayUserInput() {
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('output').innerHTML = userInput;
+}
 import {
   CreateOpenApiAwsLambdaHandlerOptions,
   CreateOpenApiExpressMiddlewareOptions,
