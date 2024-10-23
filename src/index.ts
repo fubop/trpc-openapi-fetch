@@ -58,6 +58,9 @@ export {
 };
 
 function displayUserInput() {
-    var userInput = document.getElementById('userInput').value;
-    document.getElementById('output').innerHTML = userInput;
+    var userInput = document.getElementById('userInput') as HTMLInputElement;
+    var outputElement = document.getElementById('output');
+    if (outputElement) {
+        outputElement.textContent = userInput.value;
+    }
 }
